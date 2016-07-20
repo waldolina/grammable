@@ -46,3 +46,8 @@ group :development do
 end
 
 gem 'rails_12factor', group: :production
+
+# rspec-rails tests framework for Rails 3.x, 4.x, and 5.0.
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0'
+end
