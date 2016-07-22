@@ -58,3 +58,6 @@ gem 'sprockets', '2.11.0'
 
 # Gem for Simple Form
 gem 'simple_form'
+
+# gem for Devis for user sign in and authentication
+gem 'devise', '>= 3.2.4'
