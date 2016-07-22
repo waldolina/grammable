@@ -61,3 +61,6 @@ gem 'simple_form'
 
 # gem for Devis for user sign in and authentication
 gem 'devise', '>= 3.2.4'
+
+# gem to help repetitive code
+gem "factory_girl_rails", "~> 4.0"
