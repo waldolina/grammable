@@ -61,8 +61,8 @@ RSpec.describe GramsController, type: :controller do
 
   describe "gram#edit" do
     it "should successfully show the edit form if the gram is valid" do
-      gram = FactoryGirl.create(:gram)
-      get :edit, id: gram.id
+      p = FactoryGirl.create(:gram)
+      get :edit, id: p.id
       expect(response).to have_http_status(:success)
     end
 
@@ -92,6 +92,21 @@ RSpec.describe GramsController, type: :controller do
       expect(response).to have_http_status(:unprocessable_entity)
       p.reload
       expect(p.message).to eq "Initial Value"
+    end
+  end
+
+  describe "gram#destroy" do
+    it "should allow a user to destroy grams" do
+      p = FactoryGirl.create(:gram)
+      delete :destroy, id: p.id
+      expect(response).to redirect_to root_path
+      p = Gram.find_by_id(p.id)
+      expect(p).to eq nil
+    end
+
+    it "should return a 404 message if we cannot find the gram with the id that is specified" do 
+      delete :destroy, id: 'SPACEDUCK'
+      expect(response).to have_http_status(:not_found)
     end
   end
 end
