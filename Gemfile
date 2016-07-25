@@ -64,3 +64,10 @@ gem 'devise', '>= 3.2.4'
 
 # gem to help repetitive code
 gem "factory_girl_rails", "~> 4.0"
+
+# gem for photo installation
+gem 'carrierwave', '0.11.2'
+
+# gem for heroku-friendly rails app config using ENV and single YAML file
+gem 'figaro'
+gem 'fog'
