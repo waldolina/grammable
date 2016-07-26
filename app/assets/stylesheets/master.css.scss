@@ -1,0 +1,106 @@
+body {
+  background-color: #fafafa;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.top-nav {
+  background-color:white;
+  border-bottom-color: #edeee;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  height: 70px;
+  padding-top: 10px;
+}
+
+.top-nav .add a {
+  font-weight: 400;
+  color: gray;
+  font-size: 14px;
+  padding-left:8px;
+}
+
+.top-nav .add {
+  margin-top:10px;
+}
+
+.brand {
+  color: black;
+  font-size: 50px;
+  font-family: 'Cookie', cursive;
+}
+
+.pull-left a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: .25rem;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid #e8e8e8;
+  margin-top: 40px;
+  padding: 0;
+}
+
+.handle {
+  margin: 10px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.card .image {
+  width: 100%;
+}
+.card p, .card .message {
+  font-size:12px;
+  margin:20px;
+}
+
+.card.form {
+  padding: 20px;
+}
+
+.my-btn {
+  background-color: gray;
+  width: 100%;
+  border: none;
+  font-size: 24px;
+  color: white;
+  margin-top: 10px;
+}
+
+.input.boolean {
+  margin-left: 18px;
+  margin-top: 5px;
+}
+
+.input.boolean label {
+  margin-top: 5px;
+  line-height: 44px;
+}
+
+.gram-actions a {
+  font-weight: 400;
+  font-size: 12px;
+  color: black;
+  margin-right: 10px;
+}
+
+.gram-actions a:hover {
+  color:gray;
+}
+
+.comments {
+  padding: 20px;
+}
+
+.comment_handle {
+  font-weight:400;
+  font-size: 14px;
+}
+
+.comment {
+  margin-top: 5px;
+}
